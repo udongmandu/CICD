@@ -1,5 +1,5 @@
 FROM openjdk:21-jdk-slim
 WORKDIR /app
-COPY target/SpringGitExample.jar /app/SpringGitExample.jar
+COPY target/board-0.0.1-SNAPSHOT.jar /app/board-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app/SpringGitExample.jar"]
+ENTRYPOINT ["java", "-jar", "/app/board-0.0.1-SNAPSHOT.jar"]
